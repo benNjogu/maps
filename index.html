@@ -6,7 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body onload="initialize()">
+    <div id="map" style="height: 100%;"></div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQmcYZRKgiiyCu0Ot1aNfmzwMa_8PLbR8&callback=Function.prototype"></script>
+    <script type="text/javascript">
+            function initialize() {
+                var mapCanvas = document.getElementById("map");
+                new google.maps.Map(mapCanvas), {
+                center: { lat: 0, lng: 0 },
+                zoom: 3,
+              };
+            }
+        </script>
     <script src="./src/index.ts"></script>
   </body>
 </html>

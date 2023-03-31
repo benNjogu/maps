@@ -1,11 +1,5 @@
-import { User } from './user/User';
-import { Company } from './company/Company';
+// import { User } from './user/User';
+// import { Company } from './company/Company';
+//import '@types/google.maps';
 
-const user = new User();
-
-console.log(user);
-
-const company = new Company();
-
-console.log(company);
 
